@@ -113,3 +113,4 @@ Algorithmic Validation: Every move is validated against a central "Core," ensuri
 CI/CD Ready: The project is structured with a Dockerfile and organized for version control on GitHub, following professional DevOps workflows.
 
 One challenge was ensuring the 'Modifier' logic didn't create a 'Deadlock'—a state where neither the player nor the CPU could make a move. I solved this by implementing a Draw-to-Play mechanic and giving 'Kings' a wild-card status to break the loop
+One challenge was ensuring the 'Modifier' logic didn't create a 'Deadlock'—a state where neither the player nor the CPU could make a move. I solved this by implementing a Draw-to-Play mechanic and giving 'Kings' a wild-card status to break the loop
