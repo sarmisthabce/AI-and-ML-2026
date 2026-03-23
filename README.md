@@ -91,26 +91,6 @@ if __name__ == "__main__":
 
 
 <img width="560" height="890" alt="image" src="https://github.com/user-attachments/assets/4d8c64d2-01eb-44f2-a5e5-d3ca4c58b7ca" />
-why i choose this?
-In the era of 5G and Edge Computing, applications must be lightweight, portable, and capable of maintaining complex "state" (the current game status) across distributed environments.
-Traditional software is often bulky and hard to deploy. I observed a need for a minimalist, logic-driven application that could be used to test:
+Quantum DriftThe ObjectiveBe the first player to empty your hand by matching cards to a "Core" that constantly changes its requirements.The SetupDeal: Each player gets 7 cards.The Core: Place the rest of the deck face down. Flip the top card over to start the Core Pile.The Variable: Flip a second card next to it. This is the Modifier.How to PlayOn your turn, you must play a card from your hand onto the Core. To "drift" a card onto the pile, it must meet one of these conditions based on the Modifier:If the Modifier is Red (Hearts/Diamonds): You must play a card that is higher in value than the current Core card.If the Modifier is Black (Spades/Clubs): You must play a card that is lower in value than the current Core card.The Match: Regardless of the Modifier, you can always play a card of the same rank (e.g., a 7 on a 7) to "Reset" the drift.If you cannot play: Draw one card. If you still can't play, your turn ends.Special Action CardsSome cards have "Quantum" effects that shake up the game:CardEffectAceThe Flip: Change the Modifier card to a new one from the deck.JackThe Skip: The next player loses their turn.QueenThe Reverse: Reverse the direction of play.KingThe Singularity: Everyone else must draw 2 cards. The King counts as both Red and Black.
 
-Container Orchestration: How easily can a logic-based service be deployed via Docker?
-
-State Management: How does the system handle a "Modifier" that changes the rules of engagement in real-time?
-
-Resource Efficiency: A game that runs with near-zero overhead, ideal for testing low-latency mobile edge nodes.
-
-The Solution (The "How")
-I developed Quantum Drift, a strategic card game engine built in Python. Unlike standard games, it uses a Dynamic Modifier Logic (Red vs. Black cards) which simulates a shifting environment—much like how a mobile network must adapt to changing signal conditions.
-
-Key Technical Features:
-
-Object-Oriented Design: The game is encapsulated in a QuantumDrift class, making it modular and easy to integrate into larger systems.
-
-Algorithmic Validation: Every move is validated against a central "Core," ensuring data integrity.
-
-CI/CD Ready: The project is structured with a Dockerfile and organized for version control on GitHub, following professional DevOps workflows.
-
-One challenge was ensuring the 'Modifier' logic didn't create a 'Deadlock'—a state where neither the player nor the CPU could make a move. I solved this by implementing a Draw-to-Play mechanic and giving 'Kings' a wild-card status to break the loop
-One challenge was ensuring the 'Modifier' logic didn't create a 'Deadlock'—a state where neither the player nor the CPU could make a move. I solved this by implementing a Draw-to-Play mechanic and giving 'Kings' a wild-card status to break the loop
+The first person to play their last card wins. However, you must shout "Drift!" when you have only one card left. If someone catches you before the next player starts their turn, you must draw 2 cards.
