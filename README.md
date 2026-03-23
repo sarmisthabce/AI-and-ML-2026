@@ -5,7 +5,7 @@ project on ai and ml
 import random
 
 class QuantumDrift:
-    def __init__(self):
+    def __init__(self): 
         self.ranks = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A']
         self.suits = ['Hearts', 'Diamonds', 'Spades', 'Clubs']
         self.values = {r: i for i, r in enumerate(self.ranks)}
